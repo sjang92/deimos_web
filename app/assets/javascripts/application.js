@@ -14,8 +14,6 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree
-//= require modernizr
-//= require gumby
-//= require ui/gumby.checkbox
-//= require ui/gumby.radiobtn
+//= require twitter/bootstrap
+
 

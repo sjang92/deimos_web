@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/anjlab/bootstrap-rails.git
+  revision: addb7143365f97f938e3bdbb2ccfc52591230eda
+  branch: 3.0.0
+  specs:
+    anjlab-bootstrap-rails (3.0.0.rc2)
+      railties (>= 3.0)
+      sass (>= 3.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -37,9 +46,6 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.1)
-    gumby-framework (0.0.1)
-      jquery-rails
-      modernizr-rails
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -55,7 +61,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.25)
     minitest (4.7.5)
-    modernizr-rails (2.6.2.3)
     multi_json (1.7.9)
     pg (0.16.0)
     polyglot (0.3.3)
@@ -123,11 +128,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  anjlab-bootstrap-rails!
   coffee-rails (~> 4.0.0)
-  gumby-framework
   jbuilder (~> 1.2)
   jquery-rails
-  modernizr-rails
   pg
   rails (= 4.0.0)
   rails_12factor
