@@ -19,7 +19,6 @@
 //= require gumby
 //= require ui/gumby.checkbox
 //= require ui/gumby.radiobtn
-//= require ui/gumby.fittext
 //= require ui/gumby.navbar
 //= require ui/gumby.checkbox
 //= require ui/gumby.fixed
