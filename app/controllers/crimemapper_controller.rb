@@ -1,0 +1,2 @@
+class CrimemapperController < ApplicationController
+end
