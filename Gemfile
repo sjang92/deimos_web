@@ -27,8 +27,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem "modernizr-rails"
+gem "gumby-framework"
+
 # Gumby Framework
-gem "gumby2-rails", "~> 0.0.9"
+# gem "gumby2-rails", "~> 0.0.9"
 
 # Enable features such as static asset serving and logging on Heroku
 gem 'rails_12factor', group: :production
