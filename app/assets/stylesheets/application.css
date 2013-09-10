@@ -76,4 +76,5 @@ body {
 .introduction2 {
 	top: 40%;
 	opacity: 0;
+	visibility: hidden;
 }
