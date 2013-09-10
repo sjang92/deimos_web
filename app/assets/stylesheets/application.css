@@ -56,7 +56,7 @@ body {
 
 .scene {
 	overflow: hidden;
-	position: absolute;
+	/*position: absolute;*/
 }
 
 .center_text {
