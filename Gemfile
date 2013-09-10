@@ -34,6 +34,9 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
                           :github => 'anjlab/bootstrap-rails',
 						                            :branch => '3.0.0'
 
+# Skrollr for parallex scrolling 
+gem "skrollr-rails", "~> 0.6.11"
+
 # Enable features such as static asset serving and logging on Heroku
 gem 'rails_12factor', group: :production
 
