@@ -59,19 +59,10 @@ body {
 	position: absolute;
 }
 
-.background_skrollr {
-	display: block;
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	position: absolute;
-}
-
 .center_text {
 	text-align: center;
 }
 
 .introduction {
 	top: 40%;
-	opacity: 1;
 }
