@@ -45,20 +45,20 @@ Deimos_Scroll.prototype.getScrollDest = function() {
 
 	console.log(this.previous_scroll);
 
-	if (this.previous_scroll <= 2000) {
+	if (this.previous_scroll < 2000) {
 		if (this.scroll_change > 0) {
 			this.scrollTo(2000);
 		} else {
 			this.scrollTo(0);
 		}
-	} else if (this.previous_scroll <= 4000 && this.previous_scroll > 2000) {
+	} else if (this.previous_scroll < 4000 && this.previous_scroll > 2000) {
 		if (this.scroll_change > 0) {
 			this.scrollTo(4000);
 		} else {
 			this.scrollTo(2000);
 		}
 
-	} else if (this.previous_scroll <= 6000 && this.previous_scroll > 4000) {
+	} else if (this.previous_scroll < 6000 && this.previous_scroll > 4000) {
 		if (this.scroll_change > 0) {
 			this.scrollTo(6000);
 		} else {
