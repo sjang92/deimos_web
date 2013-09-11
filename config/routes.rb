@@ -9,7 +9,7 @@ Deimos::Application.routes.draw do
 
 	get '/' => 'index#main'
 
-	get '/' => 'support#index'
+	get '/support/index' => 'support#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
