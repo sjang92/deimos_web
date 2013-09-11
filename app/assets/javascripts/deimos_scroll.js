@@ -22,23 +22,21 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 	$(window).on('scroll', function() {
 		if (obj.isScrolling == false) {
 			obj.scroll = $(window).scrollTop();
-			obj.scroll_change = obj.scroll - this.previous_scroll;
-			this.previous_scroll = obj.scroll;
+			obj.scroll_change = obj.scroll - obj.previous_scroll;
+			obj.previous_scroll = obj.scroll;
 			$(window).trigger('custom_scroll', [obj.scroll_change]);
 		}
 	});
 
-	$(window).on('custom_scroll', function pos(e, obj.scroll_change) {
+	$(window).on('custom_scroll', function pos(e, scroll_change) {
 		console.log(obj.scroll_change);
-		//if (scroll_change ) 
-		//obj.getScrollDest(scroll_change);
 	});
 	
 	$(window).scroll(function() {
 		clearTimeout($.data(this, 'scrollTimer'));
 		$.data(this, 'scrollTimer', setTimeout(function() {
 			obj.getScrollDest();
-			console.log("Haven't scrolled in 250ms!");
+			console.log("Haven't scrolled in 200ms!");
 		}, 200));
 	});
 }
