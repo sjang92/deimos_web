@@ -13,3 +13,18 @@ Deimos_Scroll.prototype.scrollTo = function(position) {
 Deimos_Scroll.prototype.scrollTo_Element = function(elementName) {
 	return this.scrollTo(elemOffsets[$.inArray(elementName, elemNames)]);
 }
+
+Deimos_Scroll.prototype.setOnScrollListener = function() {
+	var previous_scroll = $(window).scrollTop();
+
+	$(window).on('scroll', function() {
+		var scroll = $(window).scrollTop(),
+			scroll_change = scroll - previous_scroll;
+		previous_scroll = scroll;
+		$(window).trigger('custom_scroll', [scroll_change]);
+	});
+
+	$(window).on('custom_scroll', function pos(e, scroll_change) {
+		console.log(scroll_change);
+	});
+}

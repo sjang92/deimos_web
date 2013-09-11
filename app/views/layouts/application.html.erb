@@ -63,18 +63,6 @@
 
 <script type="text/javascript">
     var s = skrollr.init(smoothScrolling=true, edgeStrategy='reset');
-	var previous_scroll = $(window).scrollTop();
-
-	$(window).on('scroll', function() {
-			    var scroll = $(window).scrollTop(),
-				        scroll_change = scroll - previous_scroll;
-						    previous_scroll = scroll;
-							    $(window).trigger('custom_scroll', [scroll_change]);
-	});
-
-	$(window).on('custom_scroll', function pos(e, scroll_change) {
-			    console.log(scroll_change);
-	});
 </script>
 </body>
 </html>
