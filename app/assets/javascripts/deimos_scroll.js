@@ -32,10 +32,10 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 		if (scroll_change ) 
 		//obj.getScrollDest(scroll_change);
 	});
-	
+	/*
 	$(window).scroll($.debounce( 250, function(){
 		console.log("Done Scrolling!");
-	}));
+	}));*/
 }
 
 Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
