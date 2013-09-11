@@ -15,5 +15,7 @@
 //= require turbolinks
 //= require_tree
 //= require twitter/bootstrap
-
+//= require skrollr
+//= require skrollr.ie
+//= require skrollr.menu
 
