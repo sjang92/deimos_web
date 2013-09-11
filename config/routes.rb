@@ -8,6 +8,8 @@ Deimos::Application.routes.draw do
 	root to: 'index#main' 
 
 	get '/' => 'index#main'
+
+	get '/' => 'support#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
