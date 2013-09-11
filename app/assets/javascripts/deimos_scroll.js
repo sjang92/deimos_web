@@ -1,7 +1,9 @@
 function Deimos_Scroll() {
 	this.animate_speed = 800;
 	this.elemNames = ["Intro1", "Intro2", "Device", "App", "Video"];
-	this.elemOffsets = ["0", "1000", "2000", "3000", "4000"];
+	this.elemOffsets = [0, 1000, 2000, 3000, 4000];
+
+	this.
 
 }
 
