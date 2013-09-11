@@ -37,29 +37,29 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 	$(window).scroll(function() {
 		clearTimeout($.data(this, 'scrollTimer'));
 		$.data(this, 'scrollTimer', setTimeout(function() {
-			obj.getScrollDest(obj.scroll_change);
+			obj.getScrollDest();
 			console.log("Haven't scrolled in 250ms!");
 		}, 200));
 	});
 }
 
-Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
+Deimos_Scroll.prototype.getScrollDest = function() {
 
 	if (this.previous_scroll <= 2000) {
-		if (scroll_change > 0) {
+		if (this.scroll_change > 0) {
 			this.scrollTo(2000);
 		} else {
 			this.scrollTo(0);
 		}
 	} else if (this.previous_scroll <= 4000 && this.previous_scroll > 2000) {
-		if (scroll_change > 0) {
+		if (this.scroll_change > 0) {
 			this.scrollTo(4000);
 		} else {
 			this.scrollTo(2000);
 		}
 
 	} else if (this.previous_scroll <= 6000 && this.previous_scroll > 4000) {
-		if (scroll_change > 0) {
+		if (this.scroll_change > 0) {
 			this.scrollTo(6000);
 		} else {
 			this.scrollTo(4000);
