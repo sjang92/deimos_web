@@ -2,7 +2,7 @@ function Deimos_Scroll() {
 	this.animate_speed = 800;
 	this.elemNames = ["Intro1", "Intro2", "Device", "App", "Video"];
 	this.elemOffsets = [0, 1000, 2000, 3000, 4000];
-
+	this.isScrolling = false;
 }
 
 Deimos_Scroll.prototype.scrollTo = function(position) {
@@ -19,15 +19,17 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 	var obj = this;
 
 	$(window).on('scroll', function() {
-		var scroll = $(window).scrollTop(),
-			scroll_change = scroll - this.previous_scroll;
-		this.previous_scroll = scroll;
-		$(window).trigger('custom_scroll', [scroll_change]);
+		if (obj.isScrolling == false) {
+			obj.scroll = $(window).scrollTop(),
+				scroll_change = obj.scroll - this.previous_scroll;
+			this.previous_scroll = obj.scroll;
+			$(window).trigger('custom_scroll', [scroll_change]);
+		}
 	});
 
 	$(window).on('custom_scroll', function pos(e, scroll_change) {
 		console.log(scroll_change);
-		obj.getScrollDest(scroll_change);
+		//obj.getScrollDest(scroll_change);
 	});
 }
 
@@ -52,4 +54,8 @@ Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
 			this.scrollTo(2000);
 		}
 	}
+	this.isScrolling = true;
 }
+
+/* THIS APPROACH WON"T WORK
+	CHANGE IT SO THAT AFTER YOU FINISH SCROLLING, GET curr offset and compare, calling scrollTo*/
