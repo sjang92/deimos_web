@@ -29,13 +29,13 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 
 	$(window).on('custom_scroll', function pos(e, scroll_change) {
 		console.log(scroll_change);
-		if (scroll_change ) 
+		//if (scroll_change ) 
 		//obj.getScrollDest(scroll_change);
 	});
-	/*
+	
 	$(window).scroll($.debounce( 250, function(){
 		console.log("Done Scrolling!");
-	}));*/
+	}));
 }
 
 Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
@@ -63,4 +63,4 @@ Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
 }
 
 /* THIS APPROACH WON"T WORK
-	CHANGE IT SO THAT AFTER YOU FINISH SCROLLING, GET curr offset and compare, calling scrollTo*/
+	CHANGE IT SO THAT AFTER YOU FINISH SCROLLING, GET curr offset and compare, calling */
