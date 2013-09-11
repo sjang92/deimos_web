@@ -42,6 +42,8 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 }
 
 Deimos_Scroll.prototype.getScrollDest = function() {
+	
+	console.log(this.scroll_change);
 
 	if (this.previous_scroll <= 2000) {
 		if (this.scroll_change > 0) {
@@ -63,6 +65,5 @@ Deimos_Scroll.prototype.getScrollDest = function() {
 			this.scrollTo(4000);
 		}
 	}
-	this.isScrolling = true;
 }
 
