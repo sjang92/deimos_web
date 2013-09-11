@@ -33,9 +33,13 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 		//obj.getScrollDest(scroll_change);
 	});
 	
-	$(window).scroll($.debounce( 250, function(){
-		console.log("Done Scrolling!");
-	}));
+	$(window).scroll(function() {
+		clearTimeout($.data(this, 'scrollTimer'));
+		$.data(this, 'scrollTimer', setTimeout(function() {
+			// do something
+			console.log("Haven't scrolled in 250ms!");
+		}, 250));
+	});
 }
 
 Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
