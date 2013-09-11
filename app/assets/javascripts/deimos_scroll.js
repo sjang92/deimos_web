@@ -11,6 +11,7 @@ Deimos_Scroll.prototype.scrollTo = function(position) {
 }
 
 Deimos_Scroll.prototype.scrollTo_Element = function(elementName) {
+	console.log($.inArray(elementName, this.elemNames));
 	return this.scrollTo(elemOffsets[$.inArray(elementName, this.elemNames)]);
 }
 
@@ -38,7 +39,7 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 		$.data(this, 'scrollTimer', setTimeout(function() {
 			// do something
 			console.log("Haven't scrolled in 250ms!");
-		}, 250));
+		}, 200));
 	});
 }
 
