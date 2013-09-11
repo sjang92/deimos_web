@@ -32,20 +32,20 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 }
 
 Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
-	if (this.previous_scroll < 1000) {
+	if (this.previous_scroll <= 1000) {
 		if (scroll_change > 0) {
 			this.scrollTo(1000);
 		} else {
 			this.scrollTo(0);
 		}
-	} else if (this.previous_scroll < 2000) {
+	} else if (this.previous_scroll <= 2000 && this.previous_scroll >= 1000) {
 		if (scroll_change > 0) {
 			this.scrollTo(2000);
 		} else {
 			this.scrollTo(1000);
 		}
 
-	} else if (this.previous_scroll < 3000) {
+	} else if (this.previous_scroll <= 3000 && this.previous_scroll >= 2000) {
 		if (scroll_change > 0) {
 			this.scrollTo(3000);
 		} else {
