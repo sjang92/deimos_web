@@ -50,14 +50,14 @@ Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
 		} else {
 			this.scrollTo(0);
 		}
-	} else if (this.previous_scroll <= 4000 && this.previous_scroll >= 2000) {
+	} else if (this.previous_scroll <= 4000 && this.previous_scroll > 2000) {
 		if (scroll_change > 0) {
 			this.scrollTo(4000);
 		} else {
-			this.scrollTo(1000);
+			this.scrollTo(2000);
 		}
 
-	} else if (this.previous_scroll <= 6000 && this.previous_scroll >= 4000) {
+	} else if (this.previous_scroll <= 6000 && this.previous_scroll > 4000) {
 		if (scroll_change > 0) {
 			this.scrollTo(6000);
 		} else {
@@ -67,5 +67,3 @@ Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
 	this.isScrolling = true;
 }
 
-/* THIS APPROACH WON"T WORK
-	CHANGE IT SO THAT AFTER YOU FINISH SCROLLING, GET curr offset and compare, calling */
