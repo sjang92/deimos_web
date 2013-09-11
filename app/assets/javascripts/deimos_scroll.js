@@ -28,8 +28,8 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 		}
 	});
 
-	$(window).on('custom_scroll', function pos(e, scroll_change) {
-		console.log(scroll_change);
+	$(window).on('custom_scroll', function pos(e, obj.scroll_change) {
+		console.log(obj.scroll_change);
 		//if (scroll_change ) 
 		//obj.getScrollDest(scroll_change);
 	});
@@ -37,13 +37,14 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 	$(window).scroll(function() {
 		clearTimeout($.data(this, 'scrollTimer'));
 		$.data(this, 'scrollTimer', setTimeout(function() {
-			obj.getScrollDest();
+			obj.getScrollDest(obj.scroll_change);
 			console.log("Haven't scrolled in 250ms!");
 		}, 200));
 	});
 }
 
 Deimos_Scroll.prototype.getScrollDest = function(scroll_change) {
+
 	if (this.previous_scroll <= 2000) {
 		if (scroll_change > 0) {
 			this.scrollTo(2000);
