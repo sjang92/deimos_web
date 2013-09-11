@@ -16,6 +16,7 @@ Deimos_Scroll.prototype.scrollTo_Element = function(elementName) {
 
 Deimos_Scroll.prototype.setOnScrollListener = function() {
 	this.previous_scroll = $(window).scrollTop();
+	var obj = this;
 
 	$(window).on('scroll', function() {
 		var scroll = $(window).scrollTop(),
@@ -26,7 +27,7 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 
 	$(window).on('custom_scroll', function pos(e, scroll_change) {
 		console.log(scroll_change);
-		this.getScrollDest(scroll_change);
+		obj.getScrollDest(scroll_change);
 	});
 }
 
