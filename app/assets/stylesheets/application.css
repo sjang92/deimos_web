@@ -78,3 +78,9 @@ body {
 	opacity: 0;
 	visibility: hidden;
 }
+
+/* OVERRIDE BOOTSTRAP PROPERTIES */
+
+.navbar-nav li a {
+	text-shadow: none;
+}

@@ -1,5 +1,5 @@
 function Deimos_Scroll() {
-	this.animate_speed = 800;
+	this.animate_speed = 1000;
 	this.elemNames = ["Intro1", "Intro2", "Device", "App", "Video"];
 	this.elemOffsets = [0, 2000, 4000, 6000, 8000];
 	this.isScrolling = false;
@@ -36,8 +36,8 @@ Deimos_Scroll.prototype.setOnScrollListener = function() {
 		clearTimeout($.data(this, 'scrollTimer'));
 		$.data(this, 'scrollTimer', setTimeout(function() {
 			obj.getScrollDest();
-			console.log("Haven't scrolled in 200ms!");
-		}, 200));
+			console.log("Haven't scrolled in 100ms!");
+		}, 100));
 	});
 }
 
