@@ -82,6 +82,15 @@ body {
 	visibility: hidden;
 }
 
+/* Scroll Navigation Properties */
+.scroll_up {
+	cursor: pointer;
+}
+
+.scroll_down {
+	cursor: pointer;
+}
+
 
 /* OVERRIDE BOOTSTRAP PROPERTIES */
 
