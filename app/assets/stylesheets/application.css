@@ -89,10 +89,25 @@ body {
 /* Scroll Navigation Properties */
 .scroll_up {
 	cursor: pointer;
+	width: 50px;
+	height:50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px; 
 }
 
 .scroll_down {
 	cursor: pointer;
+}
+
+.scroll_up_background {
+	width: 50px;
+	height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	opacity: 0.9;
+	background: #eee;
 }
 
 /* OVERRIDE BOOTSTRAP PROPERTIES */
