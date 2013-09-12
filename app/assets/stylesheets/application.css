@@ -97,6 +97,11 @@ body {
 .navbar-inner .navbar-collapse .nav_anchor {
 	text-shadow: none;
 	font-weight: bold;
+	color: black;
+}
+
+.navbar-brand {
+	color: black;
 }
 
 
