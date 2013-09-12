@@ -25,6 +25,7 @@ body {
 	margin-top:60px;
 }
 
+
 /* Wrapper for page content to push down footer */
 #wrap {
 	min-height: 100%;
@@ -85,7 +86,7 @@ body {
 /* OVERRIDE BOOTSTRAP PROPERTIES */
 
 /* Navbar a tags font change */
-.navbar-collapse .navbar ul li>a {
+.navbar-inner .collapse .navbar ul li a {
 	text-shadow: none;
 	font-weight: bold;
 }
