@@ -13,6 +13,8 @@
  *= require twitter/bootstrap
  */
 
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
 html,
 body {
 	height: 100%;
@@ -78,6 +80,7 @@ body {
 	opacity: 0;
 	visibility: hidden;
 }
+
 
 /* OVERRIDE BOOTSTRAP PROPERTIES */
 
