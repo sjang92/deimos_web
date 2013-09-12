@@ -82,6 +82,10 @@ body {
 	visibility: hidden;
 }
 
+.productName {
+	color: white;
+}
+
 /* Scroll Navigation Properties */
 .scroll_up {
 	cursor: pointer;
