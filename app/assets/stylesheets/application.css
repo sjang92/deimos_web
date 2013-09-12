@@ -100,7 +100,7 @@ body {
 	color: black;
 }
 
-.navbar-brand {
+.navbar-default .navbar-inner .navbar-header .navbar-brand {
 	color: black;
 }
 
