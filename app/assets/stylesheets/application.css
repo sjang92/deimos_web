@@ -95,7 +95,7 @@ body {
 /* OVERRIDE BOOTSTRAP PROPERTIES */
 
 /* Navbar a tags font change */
-.navbar-inner .collapse .navbar ul li a {
+.navbar-inner .collapse .navbar li a {
 	text-shadow: none;
 	font-weight: bold;
 }
