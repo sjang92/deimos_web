@@ -1,7 +1,7 @@
 function Deimos_Scroll() {
 	this.animate_speed = 1000;
-	this.elemNames = ["Intro1", "Intro2", "Device", "App", "Video"];
-	this.elemOffsets = [0, 2000, 4000, 6000, 8000];
+	this.elemNames = ["Intro1", "Intro2", "Device", "App", "Support", "Preorder"];
+	this.elemOffsets = [0, 2000, 4000, 6000, 8000, 10000];
 	this.isScrolling = false;
 }
 
@@ -11,6 +11,7 @@ Deimos_Scroll.prototype.scrollTo = function(position) {
 }
 
 Deimos_Scroll.prototype.scrollTo_Element = function(elementName) {
+	
 	console.log($.inArray(elementName, this.elemNames));
 	return this.scrollTo(this.elemOffsets[$.inArray(elementName, this.elemNames)]);
 }

@@ -91,11 +91,10 @@ body {
 	cursor: pointer;
 }
 
-
 /* OVERRIDE BOOTSTRAP PROPERTIES */
 
 /* Navbar a tags font change */
-.navbar-inner .collapse .navbar li a {
+.navbar-inner .navbar-collapse .nav_anchor {
 	text-shadow: none;
 	font-weight: bold;
 }
