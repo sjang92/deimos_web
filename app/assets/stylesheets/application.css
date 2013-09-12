@@ -81,6 +81,9 @@ body {
 
 /* OVERRIDE BOOTSTRAP PROPERTIES */
 
-.navbar-nav li a {
+.navbar ul li>a {
 	text-shadow: none;
+	font-weight: bold;
 }
+
+
