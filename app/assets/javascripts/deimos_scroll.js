@@ -13,6 +13,7 @@ Deimos_Scroll.prototype.scrollTo = function(position) {
 Deimos_Scroll.prototype.scrollTo_Element = function(elementName) {
 	
 	console.log($.inArray(elementName, this.elemNames));
+	console.log(this.elemOffsets[$.inArray(elementName,this.elemNames)]);
 	return this.scrollTo(this.elemOffsets[$.inArray(elementName, this.elemNames)]);
 }
 

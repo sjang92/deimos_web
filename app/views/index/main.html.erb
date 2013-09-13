@@ -1,5 +1,7 @@
 <div id = 'skrollr-body'>
 	<div class = 'container'>
+
+		<!-- INTRODUCTION -->
 		<div class = 'scene introduction center_vertical center_text' data-0="opacity:1;top:40%;" data-2000="opacity:0; top:45%;">
 			<h1> Team Deimos </h1>	
 		</div>
@@ -7,6 +9,8 @@
 			<h2> Introducing the world's </h2>
 			<h2> First Smart Personal Defense Apparatus</h2>
 		</div>
+
+		<!-- UP AND DOWN NAVIGATION SCROLL BUTTON -->
 
 		<div class = 'downNavigation'>
 			<div class = 'scene scroll_down center_text center_vertical' data-0="visibility: visible; opacity:1; top:80%;" data-1500="opacity:0.7; top: 80%; visibility: visible" data-2000="opacity:0; top: 80%; visibility: hidden;" onclick="ds.scrollTo_Element('Intro2')">
@@ -18,7 +22,6 @@
 			</div>
 
 		</div>
-
 		<div class = 'upNavigation'>
 			<div class = 'scene scroll_up center_text center_vertical' data-0="visibility: hidden; opacity: 0;" data-1500="opacity:0; visibility: visible; top: 20%;" data-2000="opacity:1; top:20%;" data-3500="opacity:0.7; top:20%;" data-4000="opacity:0; top:20%; visibility: hidden;" onclick="ds.scrollTo_Element('Intro1')">
 						<span class = 'glyphicon glyphicon-chevron-up' data-0="color:rgb(0,0,0)" data-3000="color:rgb(0,0,0);" data-4000="color:rgb(255,255,255);"></span>
@@ -28,14 +31,16 @@
 				<span class = 'glyphicon glyphicon-chevron-up' data-3000="color:rgb(0,0,0)" data-4000="color:rgb(255,255,255)"></span>
 			</div>
 		</div>
-
+		
+		<!-- SOCIAL NETWORKS FOLLOW AND SHARE -->
 		<div class = 'scene socialNetworks' data-0="top: 40%; right: 5px;" data-10000="top:40%; right:5px;" style="width:50px;">
 			<a href="https://twitter.com/intent/follow?&screen_name=TeamDeimos"><img src="/images/twitter_logo.png" alt = ''/></a>
 			<br>
 			<a href="http://www.facebook.com/share.php?u=deimosweb.herokuapp.com" onclick="return fb_like()" target="_blank"><img src="/images/facebook_logo.png" alt = ''/></a>
 
 		</div>
-
+		
+		<!-- PRODUCT DISPLAY-->
 		<div class = 'scene productDisplay center_vertical' data-0="visibility: hidden;" data-3200="visibility:visible; top:99%;"data-4000="visibility: visible; top: 40%;">
 			<img src = '/images/front_display.png' alt = ""/>
 		</div>
