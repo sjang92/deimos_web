@@ -4,13 +4,14 @@
   <title>Deimos</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application"%>
+  <%= javascript_include_tag "deimos_scroll"%>
   <%= csrf_meta_tags %>
    <script src="https://platform.twitter.com/widgets.js"></script>
    <script src="http://prinzhorn.github.com/skrollr/src/skrollr.js"></script>
 </head>
 <body>
 <script type="text/javascript">
-	//var ds = new Deimos_Scroll();
+	var ds = new Deimos_Scroll();
 </script>
 <script>function fb_like() {
 		url=location.href;
@@ -64,7 +65,7 @@
 	console.log("Called1");
    	var s = skrollr.init(smoothScrolling=true);
 	console.log("Called2");
-	//ds.setOnScrollListener();
+	ds.setOnScrollListener();
 </script>
 </body>
 </html>
