@@ -14,6 +14,7 @@
 <body>
 <script type="text/javascript">
 	var ds = new Deimos_Scroll();
+	var counter = 0;
 </script>
 <script>function fb_like() {
 		url=location.href;
@@ -64,13 +65,17 @@
 </div>
 
 <script type="text/javascript">
-	console.log("Called1");
-    var s = skrollr.init(smoothScrolling=true);
-	if (s == null) {
-		console.log("s is null")
+	if (counter == 0) {
+		console.log("Called1");
+   		 var s = skrollr.init(smoothScrolling=true);
+		if (s == null) {
+			console.log("s is null")
+		}
+		console.log("Called2");
+		ds.setOnScrollListener();
+		counter++;
+		console.log(counter)
 	}
-	console.log("Called2");
-	ds.setOnScrollListener();
 </script>
 </body>
 </html>
