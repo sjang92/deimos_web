@@ -64,10 +64,14 @@
 </div>
 
 <script type="text/javascript">
-	console.log("Called1");
-    var s = skrollr.init(smoothScrolling=true);
-	console.log("Called2");
-	ds.setOnScrollListener();
+	$.(window).load(Function() {
+			
+	
+		console.log("Called1");
+    	var s = skrollr.init(smoothScrolling=true);
+		console.log("Called2");
+		ds.setOnScrollListener();
+	});
 </script>
 </body>
 </html>
