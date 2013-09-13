@@ -30,9 +30,11 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-                          :github => 'anjlab/bootstrap-rails',
-						                            :branch => '3.0.0'
+#gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+ #                         :github => 'anjlab/bootstrap-rails',
+#						                            :branch => '3.0.0'
+
+gem 'bootstrap3-rails'
 
 # Skrollr for parallex scrolling 
 gem "skrollr-rails", "~> 0.6.11"
