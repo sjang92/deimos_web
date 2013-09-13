@@ -16,5 +16,7 @@
 //= require_tree
 //= require bootstrap
 
-
+//= require skrollr
+//= require skrollr.ie
+//= require skrollr.menu
 
