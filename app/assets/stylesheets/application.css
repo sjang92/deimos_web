@@ -86,6 +86,14 @@ body {
 	color: white;
 }
 
+.support_title {
+	top: 25%;
+}
+
+.preorder_title {
+	top: 25%;
+}
+
 /* Scroll Navigation Properties */
 .scroll_up {
 	cursor: pointer;
