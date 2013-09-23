@@ -66,6 +66,18 @@ Deimos_Scroll.prototype.getScrollDest = function() {
 		} else {
 			this.scrollTo(4000);
 		}
-	}
+	} else if (this.previous_scroll < 8000 && this.previous_scroll > 6000) {
+		if (this.scroll_change > 0) {
+			this.scrollTo(8000);
+		} else {
+			this.scrollTo(6000);
+		}
+	} else if (this.previous_scroll < 10000 && this.previous_scroll > 8000) {
+		if (this.scroll_change > 0) {
+			this.scrollTo(10000)
+		} else {
+			this.scrollTo(8000);
+		}
+	} 
 }
 
