@@ -39,6 +39,9 @@ gem 'bootstrap3-rails'
 # Skrollr for parallex scrolling 
 gem "skrollr-rails", "~> 0.6.11"
 
+# Mail Sending API
+gem 'mandrill-api'
+
 # Enable features such as static asset serving and logging on Heroku
 gem 'rails_12factor', group: :production
 
