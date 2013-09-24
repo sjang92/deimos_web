@@ -87,11 +87,15 @@ body {
 }
 
 .support_title {
-	top: 25%;
+	top: 20%;
+	left:0;
+	right:0;
 }
 
 .preorder_title {
-	top: 25%;
+	top: 20%;
+	left:0;
+	right:0;
 }
 
 /* Scroll Navigation Properties */
