@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'bootstrap3-rails'
 
 # Skrollr for parallex scrolling 
-gem "skrollr-rails", "~> 0.6.11"
+#gem "skrollr-rails", "~> 0.6.11"
 
 # Mail Sending API
 gem 'mandrill-api'
